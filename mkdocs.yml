@@ -1,0 +1,84 @@
+# Basics
+site_name: Angelina_Notebook
+repo_url: https://github.com/angelina421/Angelina_Notebook
+repo_name: Angelina_Notebook
+
+theme:
+  name: material
+  language: zh
+  custom_dir: theme
+  features:
+    - navigation.top
+    - navigation.tabs
+  palette:
+    - primary: white
+    - scheme: default
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    - scheme: slate
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+
+extra:
+  math:
+    enable_dollar_delimiter: true
+
+plugins:
+  - search
+
+markdown_extensions:
+  - admonition
+  - footnotes
+  - def_list
+  - toc:
+      permalink: true
+  - pymdownx.arithmatex
+  - pymdownx.caret
+  - pymdownx.critic
+  - pymdownx.details
+  - pymdownx.inlinehilite
+  - pymdownx.magiclink
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+  - pymdownx.highlight:
+      guess_lang: false
+      linenums: true
+  - attr_list
+  - md_in_html
+  - pymdownx.superfences
+
+# Contents
+nav:
+  - 欢迎来到 Anglina skill docs:
+      - 关于这个网站: index.md
+  - 软件:
+      - 版本控制系统:
+          - git: software\版本控制系统\Git\git简介.md
+      - 包管理器:
+          - conda: software\包管理器\conda\conda简介.md
+          - pip: software\包管理器\pip\pip简介.md
+          - uv: software\包管理器\uv\uv简介.md
+      - 编辑器:
+          - vim: software\编辑器\vim\vim简介\vim编辑器的使用.md
+          - vscode:
+              - vscode快捷键: software\编辑器\vscode\vscode快捷键\vscode快捷键.md
+              - vscode配置文件: software\编辑器\vscode\vscode配置文件\vscode配置文件.md
+      - 构建工具:
+          - CMake: software\构建工具\CMake\CMake简介.md
+      - 命令行:
+          - 命令行简介: software\命令行\命令行简介\命令行简介.md
+          - 命令行优化: software\命令行\命令行优化\命令行优化.md
+      - 容器化平台:
+          - Docker: software\容器化平台\Docker\Docker简介.md
+      - Linux:
+          - Linux系统安装: software\linux\Linux系统安装\Linux系统安装.md
+          - Shell常见命令: software\linux\Shell常用命令\Shell常见命令.md
+          - Linux软件管理: software\linux\Linux软件管理\Linux软件管理.md
+          - Linux文件系统: software\linux\Linux文件系统\Linux文件系统.md
+          - Linux网络配置: software\linux\Linux网络配置\Linux网络配置.md
+          - Linux和Windows交互: software\linux\Linux和Windows交互\Linux和Windows交互.md
